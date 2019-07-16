@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"]
+    },
     "typeRoots": ["./typings"],
     "sourceMap": true,
     "module": "esnext",
