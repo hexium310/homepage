@@ -18,7 +18,6 @@
     "gatsby-plugin-ts-loader": "^0.1.0",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.3",
-    "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -29,7 +28,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "eslint --fix --config .eslintrc.fix.json 'src/**/*.{js,ts,tsx}'",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "start": "npm run develop",
     "serve": "gatsby serve",
