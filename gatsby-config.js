@@ -14,5 +14,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-ts-loader',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'roboto:300,400,500,700',
+          'material icons',
+        ],
+      },
+    },
   ],
 };
